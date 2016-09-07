@@ -71,18 +71,27 @@
       <div id="container">
       <form>
        <fieldset> 
-       <legend>Personal Details</legend>
-         <label for="FName" class="field">First Name</label>
-         <input type="text" name="Name" id="FName" placeholder="Enter your first name" required>
-          <label for="pass" class="field">Password</label>
-         <input type="text" name="pass" id="pass" placeholder="Enter your password">
-         <label for="Email" class="field">Email</label>
-         <input type="email" name="Email" id="Email" placeholder="Enter your email" required autofocus>
-         <label for="webby" class="field">Website</label>
-         <input type="url" name="website" id="webby" placeholder="Enter a url">
-         <label for="tel" class="field">Telephone</label>
-         <input type="tel" name="telephone" id="tel" placeholder="Enter a contact number">
-         <input type="submit" name="submit" value="submit">
+          <legend>Personal Details</legend>
+            <label for="FName" class="field">First Name</label>
+            <input type="text" name="Name" id="FName" placeholder="Enter your first name" required>
+             <label for="pass" class="field">Password</label>
+            <input type="text" name="pass" id="pass" placeholder="Enter your password">
+            <label for="Email" class="field">Email</label>
+            <input type="email" name="Email" id="Email" placeholder="Enter your email" required autofocus>
+            <label for="webby" class="field">Website</label>
+            <input type="url" name="website" id="webby" placeholder="Enter a url">
+            <label for="tel" class="field">Telephone</label>
+            <input type="tel" name="telephone" id="tel" placeholder="Enter a contact number" pattern=".{10}" title="Must be a 10-digit number">
+            <label for="pass" class="field">Passport No.</label>
+            <input type="text" name="Passport" id="pass" placeholder="" pattern="(^[a-zA-Z]{2})([0-9]{7})" title="Passport number must be 2 letters followed by 7 digits" >
+             <label for="card" class="field">Credit Card</label>
+            <input type="number" name="ccard" id="card" placeholder="Enter your 16-digit card number" >
+            <label for="age" class="field">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter your age (must be 18-35)" pattern="(1[8-9]2[0-9]3[0-5])">
+            <input type="submit" name="submit" value="submit">
+
+            
+
       </fieldset>
     </div>
 
