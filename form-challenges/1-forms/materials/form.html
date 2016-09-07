@@ -83,13 +83,17 @@
             <label for="tel" class="field">Telephone</label>
             <input type="tel" name="telephone" id="tel" placeholder="Enter a contact number" pattern=".{10}" title="Must be a 10-digit number">
             <label for="pass" class="field">Passport No.</label>
-            <input type="text" name="Passport" id="pass" placeholder="" pattern="(^[a-zA-Z]{2})([0-9]{7})" title="Passport number must be 2 letters followed by 7 digits" >
+            <input type="text" name="Passport" id="pass" placeholder="Enter a valid passport number" pattern="(^[a-zA-Z]{2})([0-9]{7})" title="Passport number must be 2 letters followed by 7 digits" >
              <label for="card" class="field">Credit Card</label>
             <input type="number" name="ccard" id="card" placeholder="Enter your 16-digit card number" >
             <label for="age" class="field">Age</label>
-            <input type="number" name="age" id="age" placeholder="Enter your age (must be 18-35)" pattern="(1[8-9]2[0-9]3[0-5])">
-            <input type="submit" name="submit" value="submit">
+            <input type="number" name="age" id="age" placeholder="Enter your age (must be 18-64)" min="18" max="64">
+            <label for="eircode" class="field">Postcode</label>
+            <input type="text" name="eircode" id="eircode" placeholder="Enter your Eircode" >
 
+            
+            <input type="submit" name="submit" value="submit">
+            
             
 
       </fieldset>
